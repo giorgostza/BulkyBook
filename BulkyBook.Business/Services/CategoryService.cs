@@ -43,7 +43,7 @@ namespace BulkyBook.Business.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteCategorAsync(int id)
+        public async Task DeleteCategoryAsync(int id)
         {
             var category = await _context.Categories.FindAsync(id);
             if (category == null)

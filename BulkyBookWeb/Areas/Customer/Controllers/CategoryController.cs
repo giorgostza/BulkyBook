@@ -141,7 +141,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
         public async Task<IActionResult> DeletePOST(int id)
         {
 
-            await _categoryService.DeleteCategorAsync(id);
+            await _categoryService.DeleteCategoryAsync(id);
 
             TempData["success"] = "Category deleted successfully.";
 
